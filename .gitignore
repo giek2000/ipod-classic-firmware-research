@@ -1,0 +1,36 @@
+# Decrypted firmware binaries (not for distribution)
+*.bin
+
+# Pre-built binaries (not for distribution)
+wInd3x-linux-amd64
+wInd3x-linux-arm64
+wInd3x
+*.exe
+
+# Exploit payloads
+haxdfu_payload.bin
+haxdfu_setup.bin
+
+# IPSW firmware files
+*.ipsw
+Firmware-*
+
+# Build artifacts
+build/
+dist/
+__pycache__/
+*.pyc
+*.spec
+
+# Extracted IPSW contents
+Classic 7/
+extracted/
+mse_out/
+
+# Temporary files
+*.tmp
+*.log
+decrypt_recovery.dat
+
+# IDE
+.vscode/

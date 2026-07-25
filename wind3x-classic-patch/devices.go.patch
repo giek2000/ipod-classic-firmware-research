@@ -1,0 +1,65 @@
+diff --git a/pkg/devices/devices.go b/pkg/devices/devices.go
+index abcdef1..1234567 100644
+--- a/pkg/devices/devices.go
++++ b/pkg/devices/devices.go
+@@ -5,6 +5,7 @@ type Kind string
+ const (
+ 	Nano3     Kind = "n3g"
+ 	Nano4     Kind = "n4g"
++	Classic6G Kind = "classic6g"
+ 	Nano5     Kind = "n5g"
+ 	Nano6     Kind = "n6g"
+ 	Nano7     Kind = "n7g"
+@@ -14,7 +15,7 @@ const (
+ type DFUProtoVersion int
+ 
+ const (
+-	// DFUProtoVersion1 is implemented by Nano3G.
++	// DFUProtoVersion1 is implemented by Nano3G and Classic6G.
+ 	DFUProtoVersion1 DFUProtoVersion = 1
+ 	// DFUProtoVersion2 is implemented by Nano4G+.
+ 	DFUProtoVersion2 DFUProtoVersion = 2
+@@ -26,6 +27,8 @@ func (k Kind) String() string {
+ 		return "Nano 3G"
+ 	case Nano4:
+ 		return "Nano 4G"
++	case Classic6G:
++		return "Classic 6G"
+ 	case Nano5:
+ 		return "Nano 5G"
+ 	case Nano6:
+@@ -40,7 +43,7 @@ func (k Kind) String() string {
+ 
+ func (k Kind) SoCCode() string {
+ 	switch k {
+-	case Nano3:
++	case Nano3, Classic6G:
+ 		return "8702"
+ 	case Nano4:
+ 		return "8720"
+@@ -55,7 +58,7 @@ func (k Kind) SoCCode() string {
+ 
+ func (k Kind) DFUVersion() DFUProtoVersion {
+ 	switch k {
+-	case Nano3:
++	case Nano3, Classic6G:
+ 		return DFUProtoVersion1
+ 	default:
+ 		return DFUProtoVersion2
+@@ -88,6 +91,15 @@ var Descriptions = []Description{
+ 		Kind:            Nano3,
+ 	},
+ 	{
++		VID: 0x05ac,
++		PIDs: map[InterfaceKind]int16{
++			DFU:  0x1223,
++			WTF:  0x1247,
++			Disk: 0x1261,
++		},
++		UpdaterFamilyID: 35,
++		Kind:            Classic6G,
++	},
++	{
+ 		VID: 0x05ac,
+ 		PIDs: map[InterfaceKind]int16{
+ 			DFU:  0x1225,
