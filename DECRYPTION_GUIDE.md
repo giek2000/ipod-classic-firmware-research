@@ -12,7 +12,7 @@ The iPod Classic RetailOS (OSOS) firmware is AES-encrypted in IMG1 format. Decry
 | **USB cable** | 30-pin to USB-A |
 | **Computer** | Linux (native or WSL2 on Windows) |
 | **wInd3x** | Built from source with Classic patch applied |
-| **IPSW file** | `iPod_35.2.0.4.ipsw` (download from Apple or ipsw.me) |
+| **IPSW file** | `iPod_35.2.0.4.ipsw` or `iPod_38.2.0.5.ipsw` (download from Apple or ipsw.me) |
 | **Stock firmware** | iPod must be running original Apple firmware (not Rockbox/EmCORE) |
 
 ### Time Estimate

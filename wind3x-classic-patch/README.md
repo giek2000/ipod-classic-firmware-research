@@ -22,14 +22,14 @@ This patch adds iPod Classic (6th generation, all hardware revisions 2007-2014) 
 
 ## USB Product IDs
 
-All iPod Classic hardware revisions share the DFU PID `0x1223`. WTF PIDs vary by revision:
+All iPod Classic hardware revisions share the DFU PID `0x1223` (except Rev C which uses `0x1250`). WTF PIDs vary by revision:
 
-| Revision | Release | WTF PID | Model Numbers |
-|----------|---------|---------|---------------|
-| Initial (80/160GB) | Sep 2007 | `0x1241` | MB029, MB147, MB145, MB150 |
-| Rev A (120GB) | Sep 2008 | `0x1245` | MB562, MB565 |
-| Rev B (160GB) | Sep 2009 | `0x1247` | MC293, MC297 (tested ✅) |
-| Rev C (160GB) | Oct 2012 | `0x1250` | MD717, MD718 (untested) |
+| Revision | Release | DFU PID | WTF PID | Model Numbers |
+|----------|---------|---------|---------|---------------|
+| Initial (80/160GB) | Sep 2007 | `0x1223` | `0x1241` | MB029, MB147, MB145, MB150 |
+| Rev A (120GB) | Sep 2008 | `0x1223` | `0x1245` | MB562, MB565 |
+| Rev B (160GB) | Sep 2009 | `0x1223` | `0x1247` | MC293, MC297 (tested ✅) |
+| Rev C (160GB) | Oct 2012 | `0x1250` | `0x1250` | MD717, MD718 (tested ✅) |
 
 Source: [TheAppleWiki USB Product IDs](https://theapplewiki.com/wiki/USB_Product_IDs)
 

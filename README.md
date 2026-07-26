@@ -15,13 +15,14 @@ This repository contains research into the iPod Classic 7th Generation (Late 200
 - **Font Engine:** FreeType2
 
 ### Firmware Statistics
-| Metric | Value |
-|--------|-------|
-| Binary size | 10.6 MB |
-| Functions | 17,721 |
-| Strings | 55,243 |
-| Languages | 20+ |
-| ARM code start | Offset 0x800 (IMG1 header) |
+| Metric | 2.0.4 (FamilyID 35) | 2.0.5 (FamilyID 38) |
+|--------|---------------------|---------------------|
+| Binary size | 10.1 MB | 10.14 MB |
+| Functions | 23,033 | 23,164 |
+| Strings | 55,243 | 55,712 |
+| Languages | 20+ | 20+ |
+| ARM code start | Offset 0x800 | Offset 0x800 |
+| Build | N25CFirmwareWin-75 | N25CFirmwareWin-247 |
 
 ### Hidden/Disabled Features Found
 - **Debug Menu** — full debug interface accessible from Extras
@@ -51,8 +52,9 @@ This repository contains research into the iPod Classic 7th Generation (Late 200
 
 ## IPSW Structure
 
-The iPod Classic IPSW (`iPod_35.2.0.4.ipsw`) is a ZIP containing a single MSE-format firmware image:
+The iPod Classic IPSWs are ZIP files containing a single MSE-format firmware image:
 
+### 2.0.4 (`iPod_35.2.0.4.ipsw`, UpdaterFamilyID 35)
 ```
 Firmware-35.9.0.4 (93.6 MB, MSE format)
 ├── rsrc (78 MB) — FAT16 resource filesystem
@@ -63,6 +65,17 @@ Firmware-35.9.0.4 (93.6 MB, MSE format)
 ├── aupd (1.1 MB) — Firmware updater (IMG1 encrypted)
 └── hash (4 KB) — Integrity verification
 ```
+
+### 2.0.5 (`iPod_38.2.0.5.ipsw`, UpdaterFamilyID 38)
+```
+Firmware-38.9.0.5 (95.7 MB, MSE format)
+├── rsrc (80 MB) — FAT16 resource filesystem
+├── osos (10.14 MB) — RetailOS binary (IMG1 encrypted)
+├── aupd (1.1 MB) — Firmware updater (IMG1 encrypted)
+└── hash (4 KB) — Integrity verification
+```
+
+The only meaningful difference between 2.0.4 and 2.0.5 is the addition of EU Volume Limit compliance (see comparison doc).
 
 ## wInd3x iPod Classic Support
 
@@ -105,9 +118,13 @@ See `wind3x-classic-patch/` for the complete patch, build instructions, and test
 
 **Note:** Requires stock Apple firmware. Custom bootloaders (EmCORE) intercept and enter WTF mode instead.
 
-## Detailed Firmware Feature Specification
+## Detailed Firmware Feature Specifications
 
-See [`RETAILOS_FEATURE_SPEC.md`](RETAILOS_FEATURE_SPEC.md) for the full annotated specification — every controller, handler, screen, setting, and hidden feature found in the firmware, with hex offsets into the binary.
+- [`RETAILOS_FEATURE_SPEC.md`](RETAILOS_FEATURE_SPEC.md) — RetailOS 2.0.4 (FamilyID 35, Rev B) full annotated specification
+- [`RETAILOS_FEATURE_SPEC_205.md`](RETAILOS_FEATURE_SPEC_205.md) — RetailOS 2.0.5 (FamilyID 38, Rev C) full annotated specification
+- [`COMPARISON_204_vs_205.md`](COMPARISON_204_vs_205.md) — Side-by-side comparison of 2.0.4 vs 2.0.5 changes
+
+Every controller, handler, screen, setting, and hidden feature found in the firmware, with hex offsets into the binary.
 
 ## Decryption Guide
 
