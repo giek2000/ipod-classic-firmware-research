@@ -136,6 +136,8 @@ The first number in the firmware version corresponds to the UpdaterFamilyID.
 ## References
 
 - [freemyipod/wInd3x](https://github.com/freemyipod/wInd3x) — BootROM exploit and firmware tool
+- [Olsro/reddit-ipod-guides](https://github.com/Olsro/reddit-ipod-guides) — iPod Classic modding guides
+- [DavidBuchanan314/classic-ipod-tools](https://github.com/DavidBuchanan314/classic-ipod-tools) — NOR flash tools
 - [TheAppleWiki - USB Product IDs](https://theapplewiki.com/wiki/USB_Product_IDs)
 - [TheAppleWiki - DFU Mode](https://theapplewiki.com/wiki/DFU_Mode)
 - [TheAppleWiki - iPod Firmware](https://theapplewiki.com/wiki/Firmware)
