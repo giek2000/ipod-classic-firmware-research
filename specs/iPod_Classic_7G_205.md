@@ -11,7 +11,7 @@
 | **Binary Size** | 10,634,528 bytes (10.14 MB) |
 | **ARM Code Start** | 0x800 |
 | **ARM Code Size** | 10,632,480 bytes |
-| **Total Strings** | 72,926 |
+| **Total Strings** | 72,926 (>=4 chars) |
 | **Function Prologues** | 23,164 (ARM: 17,762, Thumb: 5,402) |
 | **DRAM References** | 2,578 |
 | **Peripheral Refs** | 9,481 |
