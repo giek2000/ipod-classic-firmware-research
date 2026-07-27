@@ -42,10 +42,10 @@ All firmware binaries were extracted from official Apple IPSW files and — wher
 | USB | — | — | — | — | ✅ | ✅ | ✅ |
 | Debug Menu | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | Disk Mode | — | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| EQ Presets | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | FM Radio | — | — | — | — | — | — | ✅ |
 | Genius | — | — | — | — | — | — | ✅ |
 | Demo Mode | — | — | — | — | ✅ | — | ✅ |
-| EQ | — | — | — | — | — | — | ✅ |
 
 ## Documentation Structure
 
