@@ -1,13 +1,13 @@
-# iPod 4th Generation (Color/U2) - RetailOS 1.2.1 Firmware Feature Specification
+# iPod Photo (4th Gen) - RetailOS 1.2.1 Firmware Feature Specification
 
 ## Document Summary
 
 | Field | Value |
 |-------|-------|
 | **Firmware** | RetailOS 1.2.1 |
-| **IPSW** | iPod_11.1.2.1.ipsw |
-| **Device** | iPod 4th Generation (Color/U2) (2004, Click Wheel, Color Display) |
-| **UpdaterFamilyID** | 11 |
+| **IPSW** | iPod_5.1.2.1.ipsw |
+| **Device** | iPod Photo (4th Gen) (2004, Click Wheel, Color Display, Photo Viewing) |
+| **UpdaterFamilyID** | 5 |
 | **Binary Size** | 6,514,176 bytes (6.21 MB) |
 | **ARM Code Start** | 0x0 |
 | **ARM Code Size** | 6,514,176 bytes |
