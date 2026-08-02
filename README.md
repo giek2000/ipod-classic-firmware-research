@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository documents the decryption and analysis of **22 iPod firmware binaries** spanning every PortalPlayer and Samsung S5L-based iPod generation (2001–2014). This represents the most comprehensive publicly available firmware analysis of Apple's iPod product line.
+This repository documents the decryption and analysis of **24 iPod firmware binaries** spanning every PortalPlayer and Samsung S5L-based iPod generation (2001–2014). This represents the most comprehensive publicly available firmware analysis of Apple's iPod product line.
 
 All firmware binaries were extracted from official Apple IPSW files and — where applicable — decrypted using the device's hardware AES engine via the [wInd3x](https://github.com/freemyipod/wInd3x) BootROM exploit. Analysis performed using Ghidra and Capstone disassembly.
 
@@ -24,9 +24,11 @@ All firmware binaries were extracted from official Apple IPSW files and — wher
 | 10 | Nano 1G (2005) | iPod Nano 2GB | 14.1.3.1 | PP5022 | No | [Spec](specs/iPod_Nano_1st_Gen_2GB_14_1_3_1.md) |
 | 11 | Nano 1G (2005) | iPod Nano 4GB | 17.1.3.1 | PP5022 | No | [Spec](specs/iPod_Nano_1st_Gen_4GB_17_1_3_1.md) |
 | 12 | **Nano 3G (2007)** | iPod Nano 4/8GB | 26.1.1.3 | **S5L8702** | **Yes (AES)** | [Spec](specs/iPod_Nano_3rd_Gen_4GB_26_1_1_3.md) |
-| 13 | **Nano 5G (2009)** | iPod Nano 8/16GB | 1.0.2 | **S5L8730** | **Yes (AES)** | [Spec](specs/iPod_Nano_5th_Gen_34_1_0_2.md) |
-| 14 | Classic 7G (2009) | iPod Classic 160GB | 2.0.4 | S5L8702 | Yes (AES) | [Spec](specs/iPod_Classic_7G_35_2_0_4.md) |
-| 15 | Classic 7G (2012) | iPod Classic 160GB | 2.0.5 | S5L8702 | Yes (AES) | [Spec](specs/iPod_Classic_7G_38_2_0_5.md) |
+| 13 | **Classic 6G (2007)** | iPod Classic 80/160GB | 1.1.2 | **S5L8702** | **Yes (AES)** | [Spec](specs/iPod_Classic_6G_Initial_24_1_1_2.md) |
+| 14 | **Classic 6.5G (2008)** | iPod Classic 120GB | 2.0.1 | **S5L8702** | **Yes (AES)** | [Spec](specs/iPod_Classic_6_5G_Rev_A_33_2_0_1.md) |
+| 15 | **Nano 5G (2009)** | iPod Nano 8/16GB | 1.0.2 | **S5L8730** | **Yes (AES)** | [Spec](specs/iPod_Nano_5th_Gen_34_1_0_2.md) |
+| 16 | Classic 7G (2009) | iPod Classic 160GB | 2.0.4 | S5L8702 | Yes (AES) | [Spec](specs/iPod_Classic_7G_35_2_0_4.md) |
+| 17 | Classic 7G (2012) | iPod Classic 160GB | 2.0.5 | S5L8702 | Yes (AES) | [Spec](specs/iPod_Classic_7G_38_2_0_5.md) |
 
 **Additional firmware dumps analyzed:** iPod 4th Gen Mono (FamilyID 10), 4th Gen Color (FamilyID 5), 5G Video (13.1.3, 20.1.3), 5.5G (25.1.2.3, 25.1.3), Classic 7G (2.0.4 no-DRM variant).
 
@@ -156,6 +158,8 @@ Peripheral reference counts from firmware analysis: GPIO (1,155 refs), LCD (0x38
 │   ├── iPod_Nano_1st_Gen_2GB_14_1_3_1.md
 │   ├── iPod_Nano_1st_Gen_4GB_17_1_3_1.md
 │   ├── iPod_Nano_3rd_Gen_4GB_26_1_1_3.md
+│   ├── iPod_Classic_6G_Initial_24_1_1_2.md
+│   ├── iPod_Classic_6_5G_Rev_A_33_2_0_1.md
 │   ├── iPod_Nano_5th_Gen_34_1_0_2.md
 │   ├── iPod_Classic_7G_35_2_0_4.md
 │   └── iPod_Classic_7G_38_2_0_5.md
