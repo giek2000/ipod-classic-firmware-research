@@ -164,6 +164,7 @@ Peripheral reference counts from firmware analysis: GPIO (1,155 refs), LCD (0x38
 │   ├── iPod_Classic_7G_35_2_0_4.md
 │   └── iPod_Classic_7G_38_2_0_5.md
 ├── comparisons/                       Version-to-version diffs
+│   ├── Classic_6G_vs_6_5G_vs_7G.md
 │   ├── Classic_204_vs_205.md
 │   ├── Nano3G_vs_Classic.md
 │   ├── iPod_4th_Gen_Mono_vs_Color.md
