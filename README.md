@@ -36,33 +36,33 @@ All firmware binaries were extracted from official Apple IPSW files and — wher
 
 ## Quick-Reference Feature Matrix
 
-| Feature | 1G | 3G | Mini | 4G Mono | 4G Color | 5G/5.5G | Nano 1G | **Nano 3G** | **Nano 5G** | Classic 7G |
-|---------|----|----|------|---------|----------|---------|---------|-------------|-------------|------------|
-| RTXC RTOS | ✅ | ✅ | — | — | — | — | — | **✅** | **✅** | ✅ |
-| Pixo OS | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| FreeType2 | — | — | — | — | — | — | — | **✅** | **✅** | ✅ |
-| MeCCA Codecs | — | — | — | — | — | — | — | **✅** | **✅** | ✅ |
-| SQLite | — | — | — | — | — | — | — | — | **✅** | ✅ |
-| FairPlay DRM | — | — | — | — | — | — | — | **✅** | **✅** | ✅ |
-| Cover Flow | — | — | — | — | — | — | — | **✅** | **✅** | ✅ |
-| Nike+ iPod | — | — | — | — | — | — | ✅ | **✅** | **✅** | ✅ |
-| Voice Memos | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | **✅** | **✅** | ✅ |
-| Photos | — | ✅ | — | — | ✅ | ✅ | ✅ | **✅** | **✅** | ✅ |
-| Games | — | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | **✅** | **✅** | ✅ |
-| Video Playback | — | — | — | — | — | ✅ | — | **✅** | **✅** | ✅ |
-| USB | — | — | — | — | — | ✅ | ✅ | **✅** | **✅** | ✅ |
-| Debug Menu | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | **✅** | **✅** | ✅ |
-| Disk Mode | — | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | — | ✅ | ✅ |
-| EQ Presets | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | **✅** | **✅** | ✅ |
-| FM Radio | — | — | — | — | — | — | — | — | **✅** | ✅ |
-| Genius | — | — | — | — | — | — | — | — | **✅** | ✅ |
-| Demo Mode | — | — | — | — | — | ✅ | — | **✅** | **✅** | ✅ |
-| HW AES Encryption | — | — | — | — | — | — | — | **✅** | **✅** | ✅ |
-| Camera | — | — | — | — | — | — | — | — | **✅** | — |
-| Pedometer | — | — | — | — | — | — | — | — | **✅** | — |
-| VoiceOver | — | — | — | — | — | — | — | — | **✅** | — |
-| Shake Gesture | — | — | — | — | — | — | — | — | **✅** | — |
-| FM Live Pause | — | — | — | — | — | — | — | — | **✅** | — |
+| Feature | 1G | 3G | Mini | 4G Mono | 4G Color | 5G/5.5G | Nano 1G | **Nano 3G** | **Classic 6G** | **Classic 6.5G** | **Nano 5G** | Classic 7G |
+|---------|----|----|------|---------|----------|---------|---------|-------------|----------------|-----------------|-------------|------------|
+| RTXC RTOS | ✅ | ✅ | — | — | — | — | — | **✅** | **✅** | **✅** | **✅** | ✅ |
+| Pixo OS | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| FreeType2 | — | — | — | — | — | — | — | **✅** | **✅** | **✅** | **✅** | ✅ |
+| MeCCA Codecs | — | — | — | — | — | — | — | **✅** | **✅** | **✅** | **✅** | ✅ |
+| SQLite | — | — | — | — | — | — | — | — | — | **✅** | **✅** | ✅ |
+| FairPlay DRM | — | — | — | — | — | — | — | **✅** | **✅** | **✅** | **✅** | ✅ |
+| Cover Flow | — | — | — | — | — | — | — | **✅** | **✅** | **✅** | **✅** | ✅ |
+| Nike+ iPod | — | — | — | — | — | — | ✅ | **✅** | **✅** | **✅** | **✅** | ✅ |
+| Voice Memos | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | **✅** | **✅** | **✅** | **✅** | ✅ |
+| Photos | — | ✅ | — | — | ✅ | ✅ | ✅ | **✅** | **✅** | **✅** | **✅** | ✅ |
+| Games | — | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | **✅** | **✅** | **✅** | **✅** | ✅ |
+| Video Playback | — | — | — | — | — | ✅ | — | **✅** | **✅** | **✅** | **✅** | ✅ |
+| Debug Menu | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | **✅** | **✅** | **✅** | **✅** | ✅ |
+| Disk Mode | — | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | — | **✅** | **✅** | ✅ | ✅ |
+| FM Radio | — | — | — | — | — | — | — | — | **✅** | **✅** | **✅** | ✅ |
+| Genius | — | — | — | — | — | — | — | — | — | **✅** | **✅** | ✅ |
+| Genius Mixes | — | — | — | — | — | — | — | — | — | **✅** | **✅** | ✅ |
+| Demo Mode | — | — | — | — | — | ✅ | — | **✅** | **✅** | **✅** | **✅** | ✅ |
+| EU Volume Limit | — | — | — | — | — | — | — | — | — | — | — | ✅ (2.0.5) |
+| HW AES Encryption | — | — | — | — | — | — | — | **✅** | **✅** | **✅** | **✅** | ✅ |
+| Camera | — | — | — | — | — | — | — | — | — | — | **✅** | — |
+| Pedometer | — | — | — | — | — | — | — | — | — | — | **✅** | — |
+| VoiceOver | — | — | — | — | — | — | — | — | — | — | **✅** | — |
+| Shake Gesture | — | — | — | — | — | — | — | — | — | — | **✅** | — |
+| FM Live Pause | — | — | — | — | — | — | — | — | — | — | **✅** | — |
 
 ---
 
@@ -188,10 +188,23 @@ Peripheral reference counts from firmware analysis: GPIO (1,155 refs), LCD (0x38
 
 ### Architecture
 - **PortalPlayer era (2001–2006):** PP5002/PP5020/PP5021/PP5022 SoCs running Pixo OS
-- **Samsung era (2007–2014):** S5L8702 SoC running RTXC with "Silver" UI framework
-- All iPods use ARM cores (ARM7TDMI → ARM926EJ-S)
-- The Nano 3G and Classic share the **same S5L8702 SoC** — first encrypted iPod with a hard disk
-- Classic 7G firmware contains 17,721 ARM functions + 5,312 Thumb functions (23,033 total)
+- **Samsung S5L8702 era (2007–2012):** S5L8702 SoC (ARM926EJ-S) running RTXC with "Silver" UI framework
+- **Samsung S5L8730 era (2009):** S5L8730 SoC (ARM Cortex-A8, ARMv7) — first iPod with ARMv7
+- All iPods use ARM cores (ARM7TDMI → ARM926EJ-S → Cortex-A8)
+- The Nano 3G and ALL Classic variants share the **same S5L8702 SoC and N25C codename**
+- Classic firmware grew from 9.47 MB (6G, 2007) to 10.14 MB (7G 2.0.5, 2012) — a 7% increase over 5 years
+
+### Classic Evolution (Same SoC, Same Codename)
+- **Classic 6G Initial (2007):** 21,203 functions, 67,349 strings — no Genius, no EU Volume
+- **Classic 6.5G Rev A (2008):** 22,810 functions (+7.6%), 71,744 strings — Genius added
+- **Classic 7G Rev B (2009):** 23,036 functions (+1.0%), 72,926 strings — minor refinements
+- **Classic 7G Rev C (2012):** 23,164 functions (+0.6%), 73,500+ strings — EU Volume Limit added
+
+### Nano 5G — Architecture Leap
+- **First ARM Cortex-A8 iPod** — transitions from ARMv5TEJ to ARMv7
+- **First Thumb-dominant firmware** — 94.9% Thumb-2 code (vs 76.5% ARM on Nano 3G)
+- **Smaller binary, more features** — 6.95 MB with camera, pedometer, FM Live Pause, VoiceOver
+- **30 RTOS tasks** (vs 11 on Classic) — dedicated tasks for camera, pedometer, radio
 
 ### Identical Binaries Discovered
 - **iPod 4th Gen Mono:** FamilyID 4 and FamilyID 10 are byte-identical
@@ -233,14 +246,16 @@ Protocol: DFUProtoVersion1
 
 ## Build Codenames
 
-| Codename | Device | SoC |
-|----------|--------|-----|
-| N46 | iPod Nano 3rd Generation | S5L8702 |
-| N25C | iPod Classic 7G (Rev C) | S5L8702 |
-| N58s | iPod Nano 4th Generation | S5L8720 |
-| N33 | iPod Nano 5th Generation | S5L8730 |
-| N20 | iPod Nano 6th Generation | S5L8723 |
-| N31 | iPod Nano 7th Generation | S5L8740 |
+| Codename | Device | SoC | FamilyIDs |
+|----------|--------|-----|-----------|
+| N25C | iPod Classic 6G / 6.5G / 7G (all revisions) | S5L8702 | 24, 33, 35, 38 |
+| N46 | iPod Nano 3rd Generation | S5L8702 | 26, 27 |
+| N58s | iPod Nano 4th Generation | S5L8720 | 31 |
+| N33 | iPod Nano 5th Generation | S5L8730 | 34 |
+| N20 | iPod Nano 6th Generation | S5L8723 | 36 |
+| N31 | iPod Nano 7th Generation | S5L8740 | 37 |
+
+**Note:** All iPod Classic variants (6G Initial, 6.5G Rev A, 7G Rev B, 7G Rev C) share the **N25C** codename because they use the same S5L8702 SoC and PCB design. The hardware revisions differ only in HDD capacity, minor board component changes, and USB PID assignments.
 
 ---
 
