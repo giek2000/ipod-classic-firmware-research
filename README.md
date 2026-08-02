@@ -24,8 +24,9 @@ All firmware binaries were extracted from official Apple IPSW files and — wher
 | 10 | Nano 1G (2005) | iPod Nano 2GB | 14.1.3.1 | PP5022 | No | [Spec](specs/iPod_Nano_1st_Gen_2GB_14_1_3_1.md) |
 | 11 | Nano 1G (2005) | iPod Nano 4GB | 17.1.3.1 | PP5022 | No | [Spec](specs/iPod_Nano_1st_Gen_4GB_17_1_3_1.md) |
 | 12 | **Nano 3G (2007)** | iPod Nano 4/8GB | 26.1.1.3 | **S5L8702** | **Yes (AES)** | [Spec](specs/iPod_Nano_3G.md) |
-| 13 | Classic 7G (2009) | iPod Classic 160GB | 2.0.4 | S5L8702 | Yes (AES) | [Spec](specs/204.md) |
-| 14 | Classic 7G (2012) | iPod Classic 160GB | 2.0.5 | S5L8702 | Yes (AES) | [Spec](specs/205.md) |
+| 13 | **Nano 5G (2009)** | iPod Nano 8/16GB | 1.0.2 | **S5L8730** | **Yes (AES)** | [Spec](specs/iPod_Nano_5G.md) |
+| 14 | Classic 7G (2009) | iPod Classic 160GB | 2.0.4 | S5L8702 | Yes (AES) | [Spec](specs/204.md) |
+| 15 | Classic 7G (2012) | iPod Classic 160GB | 2.0.5 | S5L8702 | Yes (AES) | [Spec](specs/205.md) |
 
 **Additional firmware dumps analyzed:** iPod 4th Gen Mono (FamilyID 10), 4th Gen Color (FamilyID 5), 5G Video (13.1.3, 20.1.3), 5.5G (25.1.2.3, 25.1.3), Classic 7G (2.0.4 no-DRM variant).
 
@@ -33,28 +34,33 @@ All firmware binaries were extracted from official Apple IPSW files and — wher
 
 ## Quick-Reference Feature Matrix
 
-| Feature | 1G | 3G | Mini | 4G Mono | 4G Color | 5G/5.5G | Nano 1G | **Nano 3G** | Classic 7G |
-|---------|----|----|------|---------|----------|---------|---------|-------------|------------|
-| RTXC RTOS | ✅ | ✅ | — | — | — | — | — | **✅** | ✅ |
-| Pixo OS | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| FreeType2 | — | — | — | — | — | — | — | **✅** | ✅ |
-| MeCCA Codecs | — | — | — | — | — | — | — | **✅** | ✅ |
-| SQLite | — | — | — | — | — | — | — | **✅** | ✅ |
-| FairPlay DRM | — | — | — | — | — | — | — | **✅** | ✅ |
-| Cover Flow | — | — | — | — | — | — | — | **✅** | ✅ |
-| Nike+ iPod | — | — | — | — | — | — | ✅ | **✅** | ✅ |
-| Voice Memos | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | **✅** | ✅ |
-| Photos | — | ✅ | — | — | ✅ | ✅ | ✅ | **✅** | ✅ |
-| Games | — | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | **✅** | ✅ |
-| Video Playback | — | — | — | — | — | ✅ | — | **✅** | ✅ |
-| USB | — | — | — | — | — | ✅ | ✅ | **✅** | ✅ |
-| Debug Menu | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | **✅** | ✅ |
-| Disk Mode | — | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | — | ✅ |
-| EQ Presets | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | **✅** | ✅ |
-| FM Radio | — | — | — | — | — | — | — | — | ✅ |
-| Genius | — | — | — | — | — | — | — | — | ✅ |
-| Demo Mode | — | — | — | — | — | ✅ | — | **✅** | ✅ |
-| HW AES Encryption | — | — | — | — | — | — | — | **✅** | ✅ |
+| Feature | 1G | 3G | Mini | 4G Mono | 4G Color | 5G/5.5G | Nano 1G | **Nano 3G** | **Nano 5G** | Classic 7G |
+|---------|----|----|------|---------|----------|---------|---------|-------------|-------------|------------|
+| RTXC RTOS | ✅ | ✅ | — | — | — | — | — | **✅** | **✅** | ✅ |
+| Pixo OS | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| FreeType2 | — | — | — | — | — | — | — | **✅** | **✅** | ✅ |
+| MeCCA Codecs | — | — | — | — | — | — | — | **✅** | **✅** | ✅ |
+| SQLite | — | — | — | — | — | — | — | — | **✅** | ✅ |
+| FairPlay DRM | — | — | — | — | — | — | — | **✅** | **✅** | ✅ |
+| Cover Flow | — | — | — | — | — | — | — | **✅** | **✅** | ✅ |
+| Nike+ iPod | — | — | — | — | — | — | ✅ | **✅** | **✅** | ✅ |
+| Voice Memos | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | **✅** | **✅** | ✅ |
+| Photos | — | ✅ | — | — | ✅ | ✅ | ✅ | **✅** | **✅** | ✅ |
+| Games | — | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | **✅** | **✅** | ✅ |
+| Video Playback | — | — | — | — | — | ✅ | — | **✅** | **✅** | ✅ |
+| USB | — | — | — | — | — | ✅ | ✅ | **✅** | **✅** | ✅ |
+| Debug Menu | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | **✅** | **✅** | ✅ |
+| Disk Mode | — | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | — | ✅ | ✅ |
+| EQ Presets | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | **✅** | **✅** | ✅ |
+| FM Radio | — | — | — | — | — | — | — | — | **✅** | ✅ |
+| Genius | — | — | — | — | — | — | — | — | **✅** | ✅ |
+| Demo Mode | — | — | — | — | — | ✅ | — | **✅** | **✅** | ✅ |
+| HW AES Encryption | — | — | — | — | — | — | — | **✅** | **✅** | ✅ |
+| Camera | — | — | — | — | — | — | — | — | **✅** | — |
+| Pedometer | — | — | — | — | — | — | — | — | **✅** | — |
+| VoiceOver | — | — | — | — | — | — | — | — | **✅** | — |
+| Shake Gesture | — | — | — | — | — | — | — | — | **✅** | — |
+| FM Live Pause | — | — | — | — | — | — | — | — | **✅** | — |
 
 ---
 
