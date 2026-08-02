@@ -23,10 +23,10 @@ All firmware binaries were extracted from official Apple IPSW files and — wher
 | 9 | 5.5G Enhanced (2006) | iPod Video Enhanced | 25.1.2.1 | PP5022C | No | [Spec](specs/iPod_5_5G_Video_Enhanced_25_1_2_1.md) |
 | 10 | Nano 1G (2005) | iPod Nano 2GB | 14.1.3.1 | PP5022 | No | [Spec](specs/iPod_Nano_1st_Gen_2GB_14_1_3_1.md) |
 | 11 | Nano 1G (2005) | iPod Nano 4GB | 17.1.3.1 | PP5022 | No | [Spec](specs/iPod_Nano_1st_Gen_4GB_17_1_3_1.md) |
-| 12 | **Nano 3G (2007)** | iPod Nano 4/8GB | 26.1.1.3 | **S5L8702** | **Yes (AES)** | [Spec](specs/iPod_Nano_3G.md) |
-| 13 | **Nano 5G (2009)** | iPod Nano 8/16GB | 1.0.2 | **S5L8730** | **Yes (AES)** | [Spec](specs/iPod_Nano_5G.md) |
-| 14 | Classic 7G (2009) | iPod Classic 160GB | 2.0.4 | S5L8702 | Yes (AES) | [Spec](specs/204.md) |
-| 15 | Classic 7G (2012) | iPod Classic 160GB | 2.0.5 | S5L8702 | Yes (AES) | [Spec](specs/205.md) |
+| 12 | **Nano 3G (2007)** | iPod Nano 4/8GB | 26.1.1.3 | **S5L8702** | **Yes (AES)** | [Spec](specs/iPod_Nano_3rd_Gen_4GB_26_1_1_3.md) |
+| 13 | **Nano 5G (2009)** | iPod Nano 8/16GB | 1.0.2 | **S5L8730** | **Yes (AES)** | [Spec](specs/iPod_Nano_5th_Gen_34_1_0_2.md) |
+| 14 | Classic 7G (2009) | iPod Classic 160GB | 2.0.4 | S5L8702 | Yes (AES) | [Spec](specs/iPod_Classic_7G_35_2_0_4.md) |
+| 15 | Classic 7G (2012) | iPod Classic 160GB | 2.0.5 | S5L8702 | Yes (AES) | [Spec](specs/iPod_Classic_7G_38_2_0_5.md) |
 
 **Additional firmware dumps analyzed:** iPod 4th Gen Mono (FamilyID 10), 4th Gen Color (FamilyID 5), 5G Video (13.1.3, 20.1.3), 5.5G (25.1.2.3, 25.1.3), Classic 7G (2.0.4 no-DRM variant).
 
@@ -149,20 +149,23 @@ Peripheral reference counts from firmware analysis: GPIO (1,155 refs), LCD (0x38
 │   ├── iPod_Mini_2nd_Gen_7_1_4_1.md
 │   ├── iPod_4th_Gen_Mono_4_3_1_1.md
 │   ├── iPod_4th_Gen_Color_11_1_2_1.md
+│   ├── iPod_4th_Gen_Photo_5_1_2_1.md
 │   ├── iPod_5th_Gen_Video_13_1_2_1.md
+│   ├── iPod_5th_Gen_Video_Late_20_1_2_1.md
 │   ├── iPod_5_5G_Video_Enhanced_25_1_2_1.md
 │   ├── iPod_Nano_1st_Gen_2GB_14_1_3_1.md
 │   ├── iPod_Nano_1st_Gen_4GB_17_1_3_1.md
-│   ├── iPod_Nano_3G.md               ← NEW: Nano 3rd Generation
-│   ├── 204.md                         iPod Classic 7G (FW 2.0.4)
-│   └── 205.md                         iPod Classic 7G (FW 2.0.5)
+│   ├── iPod_Nano_3rd_Gen_4GB_26_1_1_3.md
+│   ├── iPod_Nano_5th_Gen_34_1_0_2.md
+│   ├── iPod_Classic_7G_35_2_0_4.md
+│   └── iPod_Classic_7G_38_2_0_5.md
 ├── comparisons/                       Version-to-version diffs
 │   ├── Classic_204_vs_205.md
-│   ├── Nano3G_vs_Classic.md           ← NEW: Three-way comparison
+│   ├── Nano3G_vs_Classic.md
 │   ├── iPod_4th_Gen_Mono_vs_Color.md
 │   ├── iPod_5th_Gen_versions.md
 │   └── iPod_Nano_1G_2GB_vs_4GB.md
-└── architecture/                      ← NEW: Deep dive documents
+└── architecture/                      Deep dive documents
     ├── BOOT_CHAIN.md
     ├── MEMORY_MAP.md
     ├── IPSW_FORMAT.md
