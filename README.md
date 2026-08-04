@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository documents the decryption and analysis of **24 iPod firmware binaries** spanning every PortalPlayer and Samsung S5L-based iPod generation (2001–2014). This represents the most comprehensive publicly available firmware analysis of Apple's iPod product line.
+This repository documents the decryption and analysis of **28 iPod firmware binaries** spanning every PortalPlayer and Samsung S5L-based iPod generation (2001–2014). This represents the most comprehensive publicly available firmware analysis of Apple's iPod product line.
 
 All firmware binaries were extracted from official Apple IPSW files and — where applicable — decrypted using the device's hardware AES engine via the [wInd3x](https://github.com/freemyipod/wInd3x) BootROM exploit. Analysis performed using Ghidra and Capstone disassembly.
 
@@ -158,13 +158,19 @@ Peripheral reference counts from firmware analysis: GPIO (1,155 refs), LCD (0x38
 │   ├── iPod_Nano_1st_Gen_2GB_14_1_3_1.md
 │   ├── iPod_Nano_1st_Gen_4GB_17_1_3_1.md
 │   ├── iPod_Nano_3rd_Gen_4GB_26_1_1_3.md
+│   ├── iPod_Classic_6G_Initial_24_1_0_1.md
+│   ├── iPod_Classic_6G_Initial_24_1_0_3.md
+│   ├── iPod_Classic_6G_Initial_24_1_1.md
 │   ├── iPod_Classic_6G_Initial_24_1_1_2.md
+│   ├── iPod_Classic_6_5G_Rev_A_33_2_0.md
 │   ├── iPod_Classic_6_5G_Rev_A_33_2_0_1.md
 │   ├── iPod_Nano_5th_Gen_34_1_0_2.md
 │   ├── iPod_Classic_7G_35_2_0_4.md
 │   └── iPod_Classic_7G_38_2_0_5.md
 ├── comparisons/                       Version-to-version diffs
+│   ├── Classic_Evolution_6G_to_7G.md
 │   ├── Classic_6G_vs_6_5G_vs_7G.md
+│   ├── Nano_3G_vs_Classic_6G.md
 │   ├── Classic_204_vs_205.md
 │   ├── Nano3G_vs_Classic.md
 │   ├── iPod_4th_Gen_Mono_vs_Color.md
