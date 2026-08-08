@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository documents the decryption and analysis of **28 iPod firmware binaries** spanning every PortalPlayer and Samsung S5L-based iPod generation (2001–2014). This represents the most comprehensive publicly available firmware analysis of Apple's iPod product line.
+This repository documents the decryption and analysis of **39 iPod firmware binaries** spanning every PortalPlayer and Samsung S5L-based iPod generation (2001–2014). This represents the most comprehensive publicly available firmware analysis of Apple's iPod product line.
 
 All firmware binaries were extracted from official Apple IPSW files and — where applicable — decrypted using the device's hardware AES engine via the [wInd3x](https://github.com/freemyipod/wInd3x) BootROM exploit. Analysis performed using Ghidra and Capstone disassembly.
 
