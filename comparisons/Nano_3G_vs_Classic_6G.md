@@ -28,11 +28,11 @@ for two very different form factors.
 
 | Metric | Nano 3G (1.1.3) | Classic 6G (1.1.2) | Delta |
 |--------|----------------|-------------------|-------|
-| Binary Size | 10,792,304 | 9,926,528 | Nano is +865,776 (+8%) |
-| Strings (>=6) | 27,446 | 25,696 | Nano +1,750 |
-| ARM Functions | 17,473 | 16,096 | Nano +1,377 |
-| Thumb Functions | 5,347 | 5,107 | Nano +240 |
-| Total Functions | 22,820 | 21,203 | Nano +1,617 |
+| Binary Size | 10,792,304 | 9,865,904 | Nano is +926,400 (+9%) |
+| Strings (>=6) | 27,446 | 25,540 | Nano +1,906 |
+| ARM Functions | 17,473 | 15,950 | Nano +1,523 |
+| Thumb Functions | 5,347 | 5,098 | Nano +249 |
+| Total Functions | 22,820 | 21,048 | Nano +1,772 |
 
 ---
 
@@ -40,10 +40,10 @@ for two very different form factors.
 
 | Metric | Count |
 |--------|-------|
-| Common to both | 25,414 |
-| Only in Nano 3G | 2,032 |
-| Only in Classic 6G | 282 |
-| Overlap percentage | 92% of Nano / 98% of Classic |
+| Common to both | 25,139 |
+| Only in Nano 3G | 2,307 |
+| Only in Classic 6G | 401 |
+| Overlap percentage | 91% of Nano / 98% of Classic |
 
 ---
 
